@@ -9,7 +9,7 @@ function App() {
     fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
     .then(res=>res.json())
     .then(data=>setData(data))
-    )
+    
   },[])
 
   return (
@@ -28,3 +28,4 @@ function App() {
 }
 
 export default App
+// pull request ???
