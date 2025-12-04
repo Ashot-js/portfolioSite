@@ -9,7 +9,6 @@ function App() {
     fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
     .then(res=>res.json())
     .then(data=>setData(data))
-    .catch(err=>console.log(err)
     )
   },[])
 
@@ -19,7 +18,7 @@ function App() {
       {
         data.map((elem)=>{
         return(
-          <h1 key={elem.id}>{elem.title}</h1>
+          <h2 key={elem.id}>{elem.title}</h2>
         )
         })
       }
