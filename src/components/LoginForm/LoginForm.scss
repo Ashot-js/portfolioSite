@@ -30,14 +30,17 @@
     padding: 20px;
     background: rgba(255, 255, 255, 0.22);
     border-radius: 22px;
-   box-shadow: 0 5px 18px rgba(0, 123, 255, 0.22);
+    box-shadow: 0 5px 18px rgba(0, 123, 255, 0.22);
     opacity: 0;
     transform: translateY(-16px);
     animation: fadeIn 0.5s forwards;
   }
 
   @keyframes fadeIn {
-    to { opacity: 1; transform: translateY(0); }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   input {
@@ -49,7 +52,6 @@
     background: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     font-size: 15px;
-    text-align: center;
     outline: none;
     transition: all 0.3s ease;
 
@@ -67,7 +69,7 @@
     box-shadow: 0 5px 18px rgba(0, 123, 255, 0.22);
     font-size: 14px;
     font-weight: 600;
-    color:#4f4c16;
+    color: #4f4c16;
     cursor: pointer;
     border: none;
     transition: all 0.3s ease;
@@ -83,7 +85,7 @@
   .LoginForm_emerror {
     color: #772a22;
     font-size: 16px;
-   
+  
   }
 
   // =========================
@@ -92,10 +94,26 @@
   @media (max-width: 1024px) {
     width: 88vw;
 
-    &_title { font-size: 24px; }
-    &_Form { max-width: 330px; gap: 14px; padding: 18px; }
-    input { max-width: 240px; font-size: 14px; padding: 10px 12px; }
-    &_btn { padding: 10px 22px; font-size: 14px; }
+    &_title {
+      font-size: 24px;
+    }
+
+    &_Form {
+      max-width: 330px;
+      gap: 14px;
+      padding: 18px;
+    }
+
+    input {
+      max-width: 240px;
+      font-size: 14px;
+      padding: 10px 12px;
+    }
+
+    &_btn {
+      padding: 10px 22px;
+      font-size: 14px;
+    }
   }
 
   // =========================
@@ -106,139 +124,27 @@
     width: 94vw;
     margin: 60px auto;
 
-    &_title { writing-mode: horizontal-tb; font-size: 22px; padding: 8px; }
-    &_Form { max-width: 280px; gap: 12px; padding: 16px; }
-    input { max-width: 220px; font-size: 13px; padding: 10px; }
-    &_btn { padding: 10px 20px; font-size: 13px; }
+    &_title {
+      writing-mode: horizontal-tb;
+      font-size: 22px;
+      padding: 8px;
+    }
+
+    &_Form {
+      max-width: 280px;
+      gap: 12px;
+      padding: 16px;
+    }
+
+    input {
+      max-width: 220px;
+      font-size: 13px;
+      padding: 10px;
+    }
+
+    &_btn {
+      padding: 10px 20px;
+      font-size: 13px;
+    }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

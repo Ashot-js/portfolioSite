@@ -37,8 +37,16 @@ function LoginForm() {
         <Formik 
          initialValues={initialValues}
        onSubmit={handleSubmit}
-       validationSchema={schema}>
+       validationSchema={schema}
+     validateOnBlur={false}
+       >
            <Form className='LoginForm_Form'>
+                     <Field id='email'
+            name='email'
+            type='email'
+            placeholder='email'
+            />
+     <ErrorMessage name='email' component='p' className='LoginForm_emerror'/>
             <Field id='username'
             name='username'
             type='text'
@@ -51,12 +59,7 @@ function LoginForm() {
             placeholder='password'
             />
      <ErrorMessage name='password' component='p' className='LoginForm_pserror'/>
-            <Field id='email'
-            name='email'
-            type='email'
-            placeholder='email'
-            />
-     <ErrorMessage name='email' component='p' className='LoginForm_emerror'/>
+   
       
      <button className='LoginForm_btn' type="submit">Login</button>
           

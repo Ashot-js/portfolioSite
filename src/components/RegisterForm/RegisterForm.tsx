@@ -39,8 +39,15 @@ function RegisterForm() {
  initialValues ={initialValues}
   onSubmit={handleSubmit}
    validationSchema={schema}
+      validateOnBlur={false}
  >
   <Form className='RegisterForm_Form' >
+    <Field id='email'
+            name='email'
+            type='email'
+            placeholder='email'
+            />
+     <ErrorMessage name='email' component='p' className='RegisterForm_emerror'/>
     <Field id='username'
             name='username'
             type='text'
@@ -60,12 +67,7 @@ function RegisterForm() {
     placeholder="confirm password"
   />
   <ErrorMessage name='confirmPassword' component='p' className='RegisterForm_confirmpserror'/>
-     <Field id='email'
-            name='email'
-            type='email'
-            placeholder='email'
-            />
-     <ErrorMessage name='email' component='p' className='RegisterForm_emerror'/>
+     
           <button className='RegisterForm_btn' type="submit">Register</button>
   </Form>
      

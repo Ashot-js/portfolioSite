@@ -1,3 +1,6 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
 body{
 background: linear-gradient(135deg, #d2ced7cf, #2a272a);
 background-attachment: fixed;
