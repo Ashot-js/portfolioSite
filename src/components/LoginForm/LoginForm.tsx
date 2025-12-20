@@ -7,9 +7,9 @@ import type { LoginFormValues } from '../../types/types';
 
 
 const initialValues:LoginFormValues ={
-  username:'',
-  password:'',
-  email:''
+ username: '',
+  password: '',
+  email: ''
 }
 function LoginForm() {
     const schema = object({
@@ -50,13 +50,13 @@ function LoginForm() {
             type='password'
             placeholder='password'
             />
-     <ErrorMessage name='password' component='p' className='LoginForm_password'/>
+     <ErrorMessage name='password' component='p' className='LoginForm_pserror'/>
             <Field id='email'
             name='email'
             type='email'
             placeholder='email'
             />
-     <ErrorMessage name='email' component='p' className='LoginForm_email'/>
+     <ErrorMessage name='email' component='p' className='LoginForm_emerror'/>
       
      <button className='LoginForm_btn' type="submit">Login</button>
           

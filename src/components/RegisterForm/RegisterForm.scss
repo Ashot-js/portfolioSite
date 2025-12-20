@@ -1,4 +1,4 @@
-.LoginForm {
+.RegisterForm {
   user-select: none;
   display: flex;
   justify-content: center;
@@ -78,9 +78,11 @@
     }
   }
 
-  .LoginForm_userror,
-  .LoginForm_pserror,
-  .LoginForm_emerror {
+  .RegisterForm_userror,
+  .RegisterForm_pserror,
+  .RegisterForm_confirmpserror,
+  .RegisterForm_emerror
+                          {
     color: #772a22;
     font-size: 16px;
    
@@ -112,133 +114,3 @@
     &_btn { padding: 10px 20px; font-size: 13px; }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
